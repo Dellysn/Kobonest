@@ -1,0 +1,73 @@
+.features-icons {
+  background: #F6F8FA;
+
+  h5 {
+    padding: 2rem;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1C1C21;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 60px;
+      background: #ED5565;
+      margin: 1rem auto;
+    }
+  }
+
+
+  .row {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    .col-md-2 {
+      width: 10%;
+      height: 50%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+
+
+
+}
+
+@media all and (max-width:480px) {
+
+  .features-icons {
+
+    h5 {
+      padding: 1rem;
+    }
+
+    .row {
+      .col-md-2 {
+        width: 20%;
+        height: 31%;
+      }
+    }
+  }
+}
+
+@media all and (max-width:375px) {
+
+  .features-icons {
+
+
+    .row {
+      .col-md-2 {
+
+        height: 25%;
+      }
+    }
+  }
+}

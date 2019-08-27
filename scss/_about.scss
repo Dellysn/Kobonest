@@ -1,0 +1,248 @@
+#about {
+    background: url("../img/Bg-dot.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+
+    h1 {
+        text-align: center;
+        margin: 6rem 0 0 0;
+        font-size: 4em;
+    }
+
+}
+
+#about-section {
+    background: #F3F3F3;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+
+    overflow: hidden;
+
+    .center-text {
+        width: 50%;
+        line-height: 40px;
+        margin: 4rem auto;
+    }
+
+    .container {
+
+
+        .fade_rule {
+
+            height: 2px;
+            background-color: #E6E6E6;
+            width: 66.0em;
+            margin: 7rem auto;
+            background-image: linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+            background-image: -o-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+            background-image: -moz-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+            background-image: -webkit-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+            background-image: -ms-linear-gradient(left, white 2%, #E6E6E6 50%, white 98%);
+            background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, gray), color-stop(0.98, white));
+        }
+
+        .row {
+            position: relative;
+            height: 100%;
+
+
+            .borders {
+                border: solid #ED5565 3px !important;
+                height: 250px;
+                margin-left: 3rem;
+
+                // background-image: url("../img/Border-rect.png") no-repeat;
+                img {
+                    position: absolute;
+                }
+
+            }
+
+
+            .card {
+                background: #fff;
+                height: 250px;
+                border: none;
+                box-shadow: 0px 5px 15px -5px #000000af;
+                -moz-transform: translate(-30px, -36px);
+                -webkit-transform: translate(-30px, -36px);
+                -o-transform: translate(-30px, -36px);
+                -ms-transform: translate(-30px, -36px);
+                transform: translate(-30px, -36px);
+                line-height: 30px;
+                border: none;
+
+                .card-header {
+                    border: none;
+                    text-align: right;
+                    background: transparent;
+                    font-size: 1.5em;
+                    color: #000000;
+
+                    opacity: 0.3;
+
+                }
+            }
+        }
+    }
+
+}
+
+#team-section {
+    background: #fff;
+    height: auto;
+    padding-bottom: 4rem;
+
+    .container {
+        h1 {
+            padding-top: 4rem;
+            padding-bottom: 6rem;
+            color: #1C1C21;
+            font-size: 3em;
+
+            &::after {
+                content: "";
+                display: block;
+                height: 3px;
+                width: 80px;
+                background: #ED5565;
+                margin: 1rem auto;
+            }
+        }
+
+        .row {
+            .col-lg-6 {
+                .row {
+                    margin-bottom: 5rem;
+                }
+            }
+
+            .col-md-6 {
+                .icons {
+                    i {
+                        color: #ED5565;
+                        background: #fff;
+                        border-radius: 50%;
+                        font-size: 1.5em;
+                        padding: .3rem;
+
+                        &:hover {
+                            background: #ED5565;
+                            color: #fff;
+                            transition: all 200ms linear;
+                        }
+                    }
+                }
+            }
+        }
+
+        .card {
+            border: #ED5565 3px solid;
+            border-radius: 0;
+
+            img {
+                -moz-transform: translate(-20px, -36px);
+                -webkit-transform: translate(-20px, -36px);
+                -o-transform: translate(-20px, -36px);
+                -ms-transform: translate(-20px, -36px);
+                transform: translate(-20px, -36px);
+                box-shadow: 0px -2px 30px rgba(0, 0, 0, 0.25);
+
+            }
+
+
+        }
+    }
+}
+
+@media all and (max-width:768px) {
+
+    #about-section {
+        .container {
+            .fade-rule {
+                height: 2px;
+                background-color: #e6e6e6;
+                width: 0;
+                margin: 5rem auto;
+
+            }
+        }
+
+        .center-text {
+            width: 85%;
+        }
+
+        .row {
+            .borders {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+
+    #team-section {
+        .container {
+            .row {
+                .col-lg-6 {
+                    .row {
+                        // margin-bottom: 1rem;
+                    }
+                }
+
+                // .card {
+                //     height: 60%;
+
+                //     .card-img-top {
+                //         width: 80%;
+                //         height: 100%;
+                //     }
+
+                // img {
+                //     transform: translate(48px, -46px);
+                // }
+            }
+        }
+    }
+
+}
+
+@media all and (max-width:480px) {
+    #team-section {
+        .container {
+            .row {
+                .col-lg-6 {
+                    .row {
+                        .col-md-6 {
+                            height: 15%;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+
+                .card {
+                    height: 60%;
+
+                    .card-img-top {
+                        width: 80%;
+                        height: 100%;
+                    }
+
+                    img {
+                        transform: translate(48px, -46px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:425px) {
+    #about {
+        h1 {
+            font-size: 3em;
+        }
+    }
+}

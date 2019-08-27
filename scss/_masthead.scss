@@ -1,0 +1,99 @@
+header.masthead {
+  position: static;
+  background-color: $gray-800;
+  background: #fff;
+  @include background-cover;
+
+  .container {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  @media all and (max-width:1024px) {
+    .container {
+      .row {
+        .col-md-4 {
+          h1 {
+            font-size: 1.5em;
+          }
+
+          .btn-danger {
+            margin-bottom: 1rem;
+          }
+        }
+
+        .col-md-8 {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  @media all and (max-width:480px) {
+    .row {
+      flex-direction: column-reverse;
+
+      .btn-danger {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  @media all and (max-width:375px) {
+    .row {
+      flex-direction: column-reverse;
+
+      .btn-danger {
+
+        width: 100%;
+        margin-left: 0;
+        height: 70px;
+
+        img {
+          width: 50%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .col-md-4 {
+    color: #000;
+    text-align: left;
+    margin-top: 4rem;
+
+    h1 {
+      font-size: 4em;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+// @media all and (max-width:1440px) {}
+
+// @media all and (max-width:1024px) {}
+
+// @media all and (max-width:768px) {}
+
+// @media all and (max-width:480px) {}
+
+// @media all and (max-width:425px) {}

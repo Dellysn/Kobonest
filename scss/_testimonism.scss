@@ -1,0 +1,115 @@
+.testimonism {
+
+    height: 712px;
+    // background: #fff;
+    background: url("../img/star.png") no-repeat;
+    background-position: top center;
+    background-size: contain;
+
+    h1 {
+        padding: 4rem;
+        text-transform: uppercase;
+        color: #1C1C21;
+    }
+
+    .container {
+        height: 100%;
+        padding-top: 4rem;
+
+        .row {
+            margin: 2rem auto;
+            width: 100%;
+
+            .card {
+                background: #fff;
+                height: auto;
+                border: none;
+                padding: 1rem;
+                box-shadow: 0px 3.22652px 48.3979px rgba(0, 0, 0, 0.25);
+                border-radius: 10.06631px;
+                width: auto;
+
+                .card-header {
+                    border: none;
+                    background: #fff;
+                }
+
+                .card-footer {
+                    background: #fff;
+                    border: none;
+                    font-size: .8em;
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: center;
+                    width: 100%;
+
+                    .title {
+                        text-transform: uppercase;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .indicators {
+        margin: 2rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .indicator.indicator-lg {
+            border: 2px solid #ED5565;
+            width: 15px;
+            height: 2px;
+        }
+
+        .indicator {
+            border: 2px solid #000000;
+            margin-left: .5rem;
+            width: 4px;
+            height: 2px;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media all and (max-width:768px) {
+    .testimonism {
+        height: auto;
+
+        h1 {
+            margin: 0;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .container {
+            .row {
+                flex-direction: column;
+
+                .col-md-4 {
+                    max-width: 100%;
+                    ;
+                }
+
+                .card {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .indicators {
+            padding: 1rem;
+        }
+    }
+}
+
+@media all and (max-width:375px) {
+    .testimonism {
+        h1 {
+            font-size: 1.5em;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.showcase {
+  margin: 2rem auto;
+  overflow-x: hidden;
+
+  .row {
+    .col-md-7 {
+      margin: 4rem auto;
+      line-height: 45px;
+
+      h1 {
+        text-align: center;
+        line-height: 45px;
+      }
+
+    }
+  }
+
+  @media all and (max-width:1024px) {
+    .row {
+      .col-md-5 {
+        img {
+          width: 100%;
+        }
+      }
+
+      .col-md-7 {
+        margin: 4rem auto;
+        line-height: 30px;
+        text-align: center;
+
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .showcase-text {
+      padding: 7rem;
+    }
+  }
+}
