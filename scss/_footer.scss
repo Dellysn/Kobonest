@@ -161,29 +161,34 @@ footer {
     }
 
     .row {
+
+
+      ul {
+        margin-right: 1rem;
+        margin: 0;
+        font-size: .8em;
+
+      }
+
       .details {
-        flex: 0 0 30.666667%;
+        flex: 0 0 20.666667%;
 
         .icons {
           i {
-            padding: .5rem;
+            padding-right: .5rem;
           }
         }
       }
     }
 
-    ul {
-      li:last-child {
-        width: 12%;
-        margin-right: 1rem;
-      }
-    }
+
 
   }
 }
 
 @media all and (max-width:768px) {
   footer {
+
     padding-bottom: 3rem;
 
     ul {
@@ -191,9 +196,39 @@ footer {
         margin: 0;
 
         i {
-          padding: 0 .5em .5em .5em;
+          padding: 0;
         }
       }
+
+    }
+
+    .container {
+
+      .footer-lengthy-item {
+
+
+        li {
+          font-size: .9em;
+        }
+
+        i {
+          display: flex;
+          float: none;
+        }
+      }
+
+      .row {
+        ul {
+          padding: 0;
+
+          li {
+            i {
+              padding-right: .5rem;
+            }
+          }
+        }
+      }
+
     }
 
     .first-row.row {
@@ -311,9 +346,6 @@ footer {
           font-size: 1.4em;
 
         }
-
-
-
       }
     }
 

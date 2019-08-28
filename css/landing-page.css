@@ -169,6 +169,11 @@ nav .navbar-toggler-icon i {
   font-size: .9em;
 }
 
+#faq-section #accordion .card .card-header .active.collapsed i {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
 #faq-section #accordion .card .card-header .card-body {
   border-bottom: #1C1C21 1px solid;
 }
@@ -1060,17 +1065,18 @@ footer form button:hover {
   footer .first-row {
     margin-bottom: 1.5rem;
   }
+  footer .row ul {
+    margin-right: 1rem;
+    margin: 0;
+    font-size: .8em;
+  }
   footer .row .details {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 30.666667%;
-    flex: 0 0 30.666667%;
+    -ms-flex: 0 0 20.666667%;
+    flex: 0 0 20.666667%;
   }
   footer .row .details .icons i {
-    padding: .5rem;
-  }
-  footer ul li:last-child {
-    width: 12%;
-    margin-right: 1rem;
+    padding-right: .5rem;
   }
 }
 
@@ -1082,7 +1088,22 @@ footer form button:hover {
     margin: 0;
   }
   footer ul li i {
-    padding: 0 .5em .5em .5em;
+    padding: 0;
+  }
+  footer .container .footer-lengthy-item li {
+    font-size: .9em;
+  }
+  footer .container .footer-lengthy-item i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: none;
+  }
+  footer .container .row ul {
+    padding: 0;
+  }
+  footer .container .row ul li i {
+    padding-right: .5rem;
   }
   footer .first-row.row .col-md-4 h2 {
     font-size: 1.3em;
