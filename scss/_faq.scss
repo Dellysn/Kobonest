@@ -112,6 +112,12 @@
                     }
                 }
 
+                .active.collapsed {
+                    i {
+                        transform: rotate(270deg; )
+                    }
+                }
+
                 .card-body {
                     border-bottom: #1C1C21 1px solid;
                 }
