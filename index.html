@@ -33,7 +33,7 @@
 
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg static-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="./img/Masked.png" alt="" />
@@ -52,13 +52,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="./index.html"
                 >Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
+              <a class="nav-link" href="./about.html">About</a>
             </li>
             
             <li class="nav-item">
@@ -79,20 +79,20 @@
     <header class="masthead text-white text-center">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4">
             <h1>Secure your Future</h1>
             <p>
               Kobonest is one of the best ways to grow your savings. We make it
               simple and beautiful. Download the app and sign up in seconds.
             </p>
-            <span class="btn btn-danger"
+            <span class="btn btn-danger mr-4"
               ><a href="#"> <img src="./img/Vector (1).png" alt=""/></a
             ></span>
             <span class="btn btn-danger"
               ><a href="#"> <img src="./img/Vector.png" alt=""/></a
             ></span>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 col-xl-8 col-lg-8 col-sm-8 mt-5">
             <img src="./img/landing_1.png" alt="" />
           </div>
         </div>
@@ -151,10 +151,13 @@
 
     <!-- Testimonials -->
     <section class="testimonials  bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4">
-            <div class="card pension">
+   
+      <!-- The slideshow -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <div class="container carousel-inner no-padding">
+    <div class="carousel-item active">
+      <div class="col-xs-4 col-sm-4 col-md-4">
+         <div class="card pension">
               <div class="block btn-danger"></div>
               <div class="card-body">
                 <h4 class="card-title">Pension</h4>
@@ -163,10 +166,10 @@
                  Think of pension as a saving for the future, Where savings are supposed to secure your livelihood when you no longer work.
                 </p>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="card education">
+      </div>  
+      </div>  
+      <div class="col-xs-4 col-sm-4 col-md-4">
+         <div class="card education">
               <div class="block btn-danger"></div>
               <div class="card-body">
                 <h4 class="card-title">Education</h4>
@@ -176,9 +179,9 @@
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="card saving">
+      </div>   
+      <div class="col-xs-4 col-sm-4 col-md-4">
+       <div class="card saving">
               <div class="block btn-danger"></div>
               <div class="card-body">
                 <h4 class="card-title">Savings</h4>
@@ -188,18 +191,109 @@
                   the bulk of the card's content.
                 </p>
               </div>
+      </div>   
+        
+    </div>
+    </div> <div class="carousel-item ">
+      <div class="col-xs-4 col-sm-4 col-md-4">
+         <div class="card pension">
+              <div class="block btn-danger"></div>
+              <div class="card-body">
+                <h4 class="card-title">Pension</h4>
+               
+                <p class="card-text">
+                 Think of pension as a saving for the future, Where savings are supposed to secure your livelihood when you no longer work.
+                </p>
+              </div>
+      </div>  
+      </div>  
+      <div class="col-xs-4 col-sm-4 col-md-4">
+         <div class="card education">
+              <div class="block btn-danger"></div>
+              <div class="card-body">
+                <h4 class="card-title">Education</h4>
+                
+                <p class="card-text">
+                  Working for a few years before embarking on higher studies helps.  Saving for your child's education now can save you from a rainy day.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card-block">
-            <img src="./img/next.png" alt="">
-          </div>
-        </div>
-        <div class="indicators">
-          <div class="indicator indicator-lg"></div>
-          <div class="indicator"></div>
-          <div class="indicator"></div>
-        </div>
-      </div>
+      </div>   
+      <div class="col-xs-4 col-sm-4 col-md-4">
+       <div class="card saving">
+              <div class="block btn-danger"></div>
+              <div class="card-body">
+                <h4 class="card-title">Savings</h4>
+               
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+      </div>   
+        
+    </div>
+    </div>
+ <div class="carousel-item ">
+      <div class="col-xs-4 col-sm-4 col-md-4">
+         <div class="card pension">
+              <div class="block btn-danger"></div>
+              <div class="card-body">
+                <h4 class="card-title">Pension</h4>
+               
+                <p class="card-text">
+                 Think of pension as a saving for the future, Where savings are supposed to secure your livelihood when you no longer work.
+                </p>
+              </div>
+      </div>  
+      </div>  
+      <div class="col-xs-4 col-sm-4 col-md-4">
+         <div class="card education">
+              <div class="block btn-danger"></div>
+              <div class="card-body">
+                <h4 class="card-title">Education</h4>
+                
+                <p class="card-text">
+                  Working for a few years before embarking on higher studies helps.  Saving for your child's education now can save you from a rainy day.
+                </p>
+              </div>
+            </div>
+      </div>   
+      <div class="col-xs-4 col-sm-4 col-md-4">
+       <div class="card saving">
+              <div class="block btn-danger"></div>
+              <div class="card-body">
+                <h4 class="card-title">Savings</h4>
+               
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+      </div>   
+        
+    </div>
+    </div>
+  </div>
+  
+   <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <!-- Left and right controls -->
+<!--   <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a> -->
+  
+  <div class="card-block">
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+     <i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i> 
+  </a></div>
+</div>
+<!-- partial -->
+  
     </section>
 
     <!-- Call to Action -->
@@ -299,12 +393,11 @@ savings account.”
 
 
     <section class="testimonism">
-      <h1 class="text-center mb-5">Testimonials</h1>
-        <!-- <div class="btn btn-danger center-align">hthht</div> -->
-            <div class="container">
-        <div class="row">
-         
-            <div class="col-md-4">
+      <h1 class="text-center mb-5">Testimonials</h1>    
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <div class="container carousel-inner no-padding">
+    <div class="carousel-item active">
+      <div class="col-xs-4 col-sm-4 col-md-4">
  <div class="card">
    <div class="card-header">
 <img src="./img/Qoute.png" alt="">
@@ -322,11 +415,10 @@ savings account.”
             
           </div>
             </div>
-            </div>
-           
-      </div>
-            <div class="col-md-4">
- <div class="card">
+      </div> 
+      </div>  
+      <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card">
    <div class="card-header">
 <img src="./img/Qoute.png" alt="">
    </div>
@@ -342,10 +434,9 @@ savings account.”
           </div>
             </div>
             </div>
-           
-      </div>
-            <div class="col-md-4">
- <div class="card">
+      </div>   
+      <div class="col-xs-4 col-sm-4 col-md-4">
+      <div class="card">
    <div class="card-header">
 <img src="./img/Qoute.png" alt="">
    </div>
@@ -361,14 +452,150 @@ savings account.”
           </div>
             </div>
             </div>
-           
-      </div>
-      </div> <div class="indicators">
-          <div class="indicator indicator-lg"></div>
-          <div class="indicator"></div>
-          <div class="indicator"></div>
+      </div>   
+        
+    </div>
+   
+    
+    <div class="carousel-item">
+      <div class="col-xs-4 col-sm-4 col-md-4">
+         
+ <div class="card">
+   <div class="card-header">
+<img src="./img/Qoute.png" alt="">
+   </div>
+            <div class="card-body">
+              Our project was executed with a high degree of professionalism and technical expertise. We would be happy to work with BTC again and we hope the opportunity presents itself.
+            </div>
+            <div class="card-footer">
+              <div class="author d-flex align-items-center">
+          <img class="avatar rounded-circle mx-2" src="./img/Ellipse.png">
+          <div class="textarea">
+            <p class="name">Abeshi Emmanuel</p>
+            <p class="title text-muted">Student</p>
+          </div>
+            
+          </div>
         </div>
-      </div>
+      </div> 
+      </div>  
+      <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card">
+   <div class="card-header">
+<img src="./img/Qoute.png" alt="">
+   </div>
+            <div class="card-body">
+              Our project was executed with a high degree of professionalism and technical expertise. We would be happy to work with BTC again and we hope the opportunity presents itself.
+            </div>
+            <div class="card-footer">
+              <div class="author d-flex align-items-center">
+          <img class="avatar rounded-circle mx-2" src="./img/Ellipse-1.png">
+          <div class="textarea">
+           <p class="name">Sally Martha Aboki</p>
+            <p class="title text-muted">Business Owner</p></div>
+          </div>
+            </div>
+            </div>
+      </div>   
+      <div class="col-xs-4 col-sm-4 col-md-4">
+      <div class="card">
+   <div class="card-header">
+<img src="./img/Qoute.png" alt="">
+   </div>
+            <div class="card-body">
+              Our project was executed with a high degree of professionalism and technical expertise. We would be happy to work with BTC again and we hope the opportunity presents itself.
+            </div>
+            <div class="card-footer">
+              <div class="author d-flex align-items-center">
+          <img class="avatar rounded-circle mx-2" src="./img/Ellipse-2.png">
+          <div class="textarea">
+             <p class="name">Oyefusi Olayemi</p>
+            <p class="title text-muted">Small Business Owner</p></div>
+          </div>
+            </div>
+            </div>
+      </div>   
+        
+    </div> 
+<div class="carousel-item ">
+ <div class="col-xs-4 col-sm-4 col-md-4">
+ <div class="card">
+   <div class="card-header">
+<img src="./img/Qoute.png" alt="">
+   </div>
+            <div class="card-body">
+              Our project was executed with a high degree of professionalism and technical expertise. We would be happy to work with BTC again and we hope the opportunity presents itself.
+            </div>
+            <div class="card-footer">
+              <div class="author d-flex align-items-center">
+          <img class="avatar rounded-circle mx-2" src="./img/Ellipse.png">
+          <div class="textarea">
+            <p class="name">Abeshi Emmanuel</p>
+            <p class="title text-muted">Student</p>
+          </div>
+            
+          </div>
+            </div>
+
+      </div> 
+      </div>  
+      <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card">
+   <div class="card-header">
+<img src="./img/Qoute.png" alt="">
+   </div>
+            <div class="card-body">
+              Our project was executed with a high degree of professionalism and technical expertise. We would be happy to work with BTC again and we hope the opportunity presents itself.
+            </div>
+            <div class="card-footer">
+              <div class="author d-flex align-items-center">
+          <img class="avatar rounded-circle mx-2" src="./img/Ellipse-1.png">
+          <div class="textarea">
+           <p class="name">Sally Martha Aboki</p>
+            <p class="title text-muted">Business Owner</p></div>
+          </div>
+            </div>
+            </div>
+      </div>   
+      <div class="col-xs-4 col-sm-4 col-md-4">
+      <div class="card">
+   <div class="card-header">
+<img src="./img/Qoute.png" alt="">
+   </div>
+            <div class="card-body">
+              Our project was executed with a high degree of professionalism and technical expertise. We would be happy to work with BTC again and we hope the opportunity presents itself.
+            </div>
+            <div class="card-footer">
+              <div class="author d-flex align-items-center">
+          <img class="avatar rounded-circle mx-2" src="./img/Ellipse-2.png">
+          <div class="textarea">
+             <p class="name">Oyefusi Olayemi</p>
+            <p class="title text-muted">Small Business Owner</p></div>
+          </div>
+            </div>
+            </div>
+      </div>   
+        
+    </div>
+  </div>
+  
+   <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+     <span class="carousel-control-next-icon"></span>
+  </a> 
+  </a></div>
+
+<!-- partial -->
 
     </section>
     <!-- Footer -->
@@ -427,7 +654,7 @@ savings account.”
                 <li><a href="#">Privacy Policy </a></li>
                 <li><a href="#">Legal Info </a></li>
                 <li><a href="#">Help Center </a></li>
-                <li><a href="faq.html">Faq </a></li>
+                <li><a href="./faq.html">Faq </a></li>
               </ul></div>
             <div class="col-md-4">
               

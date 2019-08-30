@@ -1,5 +1,6 @@
 footer {
   padding-top: 4rem;
+  margin-top: 6rem;
   padding-bottom: 4rem;
   height: auto;
   background: #1C1C21;
@@ -19,6 +20,7 @@ footer {
       border-radius: 50%;
       font-size: 1.5em;
       padding: .6rem;
+      margin-left: 1rem;
 
       &:hover {
         background: #ED5565;
@@ -130,6 +132,10 @@ footer {
       }
     }
 
+    input::placeholder {
+      color: #fff;
+    }
+
     button {
       border-radius: 1.5rem;
       background: #1C1C21;
@@ -174,8 +180,11 @@ footer {
         flex: 0 0 20.666667%;
 
         .icons {
+          width: 100%;
+
           i {
             padding-right: .5rem;
+
           }
         }
       }
@@ -329,6 +338,10 @@ footer {
     form {
       input {
         width: 100%;
+
+        &::placeholder {
+          color: #fff;
+        }
       }
 
       button {

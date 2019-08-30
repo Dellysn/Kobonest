@@ -1,0 +1,42 @@
+.carousel-indicators {
+    margin-top: 1rem;
+    position: static;
+
+    li {
+        background-color: #000;
+        border: 2px solid #000000;
+        margin-left: .5rem;
+        width: 4px;
+        height: 2px;
+        border-radius: 5px;
+
+
+    }
+}
+
+.carousel-indicators .active {
+    border: 2px solid #ED5565;
+    background-color: #ED5565;
+    width: 15px;
+    height: 2px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #fff;
+    color: #ED5565;
+    height: 95%;
+
+
+}
+
+.carousel-control-next {
+
+    position: static;
+
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}

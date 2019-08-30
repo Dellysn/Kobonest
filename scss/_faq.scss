@@ -45,9 +45,40 @@
     height: auto;
     padding-bottom: 4rem;
 
+
+
     .list-group {
-        overflow: hidden;
-        // box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+        // overflow: hidden;
+        // box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);;
+        // height: 100%;
+        padding-top: 3rem;
+        width: 100%;
+
+        .list-group-item {
+            button {
+                border: none;
+                background: transparent;
+                width: 100%;
+                text-align: left;
+                outline: none;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::after {
+                    display: none;
+                }
+
+                .show {
+                    background: #ED5565;
+                }
+            }
+
+            border: none;
+            background: transparent;
+            width: 100%;
+        }
 
         .fade_rule {
 
@@ -66,11 +97,7 @@
         .list-group-item.btn-block {
             background: $danger;
 
-            i {
-                color: #000;
-                float: right;
-                line-height: 40px;
-            }
+
         }
 
         .list-group-item {
@@ -82,9 +109,28 @@
             line-height: 40px;
             position: relative;
 
+            &:hover {
+                background: #ED5565;
 
+                &+i {
+                    display: block;
+                }
+            }
 
+            .list-group-item.active {
+                background: #ED5565;
+            }
+
+            i {
+                display: none;
+
+                &:hover {
+                    display: block;
+                }
+            }
         }
+
+
     }
 
     #accordion {
@@ -100,37 +146,41 @@
                 h5 {
                     background: transparent;
                     border: none;
+                    display: flex;
+                    justify-content: space-between;
 
                     i {
-                        float: right;
+                        // float: right;
                         color: $danger;
+                        font-size: .8em;
+                    }
+
+                    i.active {
+                        transform: rotate(-180deg);
                     }
 
                     a {
                         color: $danger;
-                        font-size: .9em;
+                        font-size: .8em;
                     }
                 }
 
-                .active.collapsed {
-                    i {
-                        transform: rotate(270deg)
-                    }
-                }
 
-                .card-body {
-                    border-bottom: #1C1C21 1px solid;
-                }
             }
 
-            .collapse.show {
-                i {
-                    transform: rotate(270deg);
-                }
+            .card-body {
+                border-bottom: #1C1C21 1px solid;
+            }
+        }
+
+        .collapse.show {
+            i {
+                transform: rotate(270deg);
             }
         }
     }
 }
+
 
 
 @media all and (max-width:375px) {
