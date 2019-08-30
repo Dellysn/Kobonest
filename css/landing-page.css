@@ -116,7 +116,7 @@ nav .navbar-toggler-icon i {
   width: 100%;
 }
 
-#faq-section .list-group .list-group-item button {
+#faq-section .list-group .list-group-item a {
   border: none;
   background: transparent;
   width: 100%;
@@ -134,11 +134,19 @@ nav .navbar-toggler-icon i {
   align-items: center;
 }
 
-#faq-section .list-group .list-group-item button::after {
+#faq-section .list-group .list-group-item a::after {
   display: none;
 }
 
-#faq-section .list-group .list-group-item button .show {
+#faq-section .list-group .list-group-item a .show {
+  background: #ED5565;
+}
+
+#faq-section .list-group .list-group-item a i {
+  display: none;
+}
+
+#faq-section .list-group li.active {
   background: #ED5565;
 }
 
@@ -174,16 +182,8 @@ nav .navbar-toggler-icon i {
   display: block;
 }
 
-#faq-section .list-group .list-group-item .list-group-item.active {
+#faq-section .list-group .list-group-item a.active {
   background: #ED5565;
-}
-
-#faq-section .list-group .list-group-item i {
-  display: none;
-}
-
-#faq-section .list-group .list-group-item i:hover {
-  display: block;
 }
 
 #faq-section #accordion {
@@ -232,6 +232,12 @@ nav .navbar-toggler-icon i {
 #faq-section #accordion .collapse.show i {
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
+}
+
+@media all and (max-width: 480px) {
+  #faq-section .list-group {
+    width: 80%;
+  }
 }
 
 @media all and (max-width: 375px) {
@@ -393,7 +399,7 @@ nav .navbar-toggler-icon i {
   #about-section .container .fade-rule {
     height: 2px;
     background-color: #e6e6e6;
-    width: 0;
+    width: 0 !important;
     margin: 5rem auto;
   }
   #about-section .center-text {
@@ -452,6 +458,7 @@ header.masthead h1 {
   }
   header.masthead .container .row .col-md-8 img {
     width: 100%;
+    margin-top: 2rem;
   }
 }
 
@@ -594,21 +601,32 @@ header.masthead .col-md-4 img {
     padding-top: 2rem;
     padding-bottom: 1rem;
   }
-  .testimonism .container .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+  .testimonism .carousel-control-next-icon,
+  .testimonism .carousel-control-prev-icon {
+    display: none;
   }
-  .testimonism .container .row .col-md-4 {
-    max-width: 100%;
+  .testimonism .card .card-body {
+    padding: 0.25rem;
+    font-size: .8em;
   }
-  .testimonism .container .row .card {
-    width: 100%;
-    margin-bottom: 2rem;
+  .testimonism .card .card-footer {
+    margin-top: .5rem;
+    padding: 0;
   }
-  .testimonism .indicators {
-    padding: 1rem;
+  .testimonism .card .card-footer .textarea {
+    font-size: .8em;
+  }
+  .testimonism .card .card-footer .title {
+    font-size: .8em;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .testimonism h1 {
+    font-size: 1.5em;
+  }
+  .testimonism .card .card-body {
+    font-size: 1em;
   }
 }
 
@@ -840,6 +858,9 @@ header.masthead .col-md-4 img {
     background-position: bottom right;
     line-height: normal;
   }
+  .testimonials .card-block {
+    right: 2%;
+  }
   .testimonials .card.education {
     background: url("../img/bulb.png") no-repeat;
     background-position: bottom right;
@@ -865,11 +886,11 @@ header.masthead .col-md-4 img {
     margin-bottom: 2rem;
     line-height: 40px;
   }
-  .testimonials .row .card-block {
+  .testimonials .card-block {
     position: static;
     width: 100%;
   }
-  .testimonials .row .card-block img {
+  .testimonials .card-block img {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
@@ -938,7 +959,10 @@ header.masthead .col-md-4 img {
   .call-to-action .container .col-lg-4 h1 {
     font-size: 1.5rem;
   }
-  .call-to-action .container .side-two .card {
+  .call-to-action .container .side-two .col-md-4 {
+    width: 100%;
+  }
+  .call-to-action .container .side-two .col-md-4 .card {
     width: 187px;
     padding: 0;
     font-size: .9em;
@@ -961,16 +985,50 @@ header.masthead .col-md-4 img {
   }
   .call-to-action .container .side-two {
     display: block;
+  }
+  .call-to-action .container .side-two .col-md-4 .card {
+    margin-top: 2rem;
+    width: 350px;
+    padding: 0;
+    font-size: 1em;
+    line-height: 30px;
+  }
+  .call-to-action .container .side-two .col-md-4 .card .card-body {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .call-to-action .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .call-to-action .container .side-two .card {
+  .call-to-action .container .side-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .call-to-action .container .side-two .col-md-4 .card {
+    margin-top: 2rem;
+    width: auto;
+  }
+  .call-to-action .container .side-two .col-md-4 .card .card-body {
     width: 100%;
-    padding: 0;
-    font-size: 1em;
-    line-height: 30px;
   }
 }
 
@@ -1186,6 +1244,13 @@ footer form button:hover {
   }
   footer ul li i {
     padding: 0;
+  }
+  footer .icons i {
+    margin-left: .5em;
+    padding: .4rem;
+  }
+  footer form button {
+    font-size: .8em;
   }
   footer .container .footer-lengthy-item li {
     font-size: .9em;

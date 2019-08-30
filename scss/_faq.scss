@@ -55,7 +55,7 @@
         width: 100%;
 
         .list-group-item {
-            button {
+            a {
                 border: none;
                 background: transparent;
                 width: 100%;
@@ -73,12 +73,21 @@
                 .show {
                     background: #ED5565;
                 }
+
+                i {
+                    display: none;
+                }
             }
 
             border: none;
             background: transparent;
             width: 100%;
         }
+
+        li.active {
+            background: #ED5565;
+        }
+
 
         .fade_rule {
 
@@ -117,17 +126,11 @@
                 }
             }
 
-            .list-group-item.active {
+            a.active {
                 background: #ED5565;
             }
 
-            i {
-                display: none;
 
-                &:hover {
-                    display: block;
-                }
-            }
         }
 
 
@@ -182,6 +185,14 @@
 }
 
 
+
+@media all and (max-width:480px) {
+    #faq-section {
+        .list-group {
+            width: 80%;
+        }
+    }
+}
 
 @media all and (max-width:375px) {
     #header {

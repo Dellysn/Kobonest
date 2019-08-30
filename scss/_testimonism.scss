@@ -73,6 +73,7 @@
         }
 
     }
+
 }
 
 
@@ -86,24 +87,42 @@
             padding-bottom: 1rem;
         }
 
-        .container {
-            .row {
-                flex-direction: column;
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            display: none;
+        }
 
-                .col-md-4 {
-                    max-width: 100%;
-                    ;
+        .card {
+            .card-body {
+                padding: 0.25rem;
+                font-size: .8em;
+            }
+
+            .card-footer {
+                margin-top: .5rem;
+                padding: 0;
+
+                .textarea {
+                    font-size: .8em;
                 }
 
-                .card {
-                    width: 100%;
-                    margin-bottom: 2rem;
+                .title {
+                    font-size: .8em;
                 }
             }
         }
 
-        .indicators {
-            padding: 1rem;
+    }
+}
+
+@media all and (max-width:480px) {
+    .testimonism {
+        h1 {
+            font-size: 1.5em;
+        }
+
+        .card .card-body {
+            font-size: 1em;
         }
     }
 }

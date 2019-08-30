@@ -99,6 +99,10 @@
 
     }
 
+    .card-block {
+      right: 2%;
+    }
+
     .card.education {
       background: url("../img/bulb.png") no-repeat;
       background-position: bottom right;
@@ -131,7 +135,7 @@
       line-height: 40px;
     }
 
-    .row .card-block {
+    .card-block {
       position: static;
       width: 100%;
 

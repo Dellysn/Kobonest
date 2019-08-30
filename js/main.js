@@ -9,21 +9,36 @@
 //   });
 // });
 
-faqBtn = document.querySelectorAll(".list-group-item");
+// var active = null;
 
-faqBtn.forEach(faq => {
-  faq.addEventListener(
-    "click",
-    e => {
-      let active = document.querySelector(".active");
-      if (e === null) {
-        active.classList.add("active");
-        console.log("remove");
-      }
-      e.target.className = "active";
-    },
-    false
-  );
+// $(".list-group li >  a").click(function(evt) {
+//   active = $(this).attr("class");
+//   console.log(this);
+//   if (active != null) {
+//     $("a." + active).focus();
+//   }
+// });
+// $("body").click(function(evt) {});
+
+const faqList = document.querySelectorAll(".list-group-item > a");
+// console.log(faqList);
+//
+const faqListArray = [...faqList];
+console.log(faqListArray);
+
+faqListArray.forEach(faq => {
+  faq.addEventListener("click", e => {
+    let li = faq.parentElement;
+    let i = faq.children[1];
+    console.log(i);
+    if (li.classList.contains("active")) {
+      li.classList.remove("active");
+      i.style.display = "none";
+    } else {
+      li.classList.add("active");
+      i.style.display = "block";
+    }
+  });
 });
 
 const collapse = document.querySelectorAll(" h5 [data-toggle]");

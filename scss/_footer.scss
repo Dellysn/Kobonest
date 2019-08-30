@@ -211,6 +211,19 @@ footer {
 
     }
 
+    .icons {
+      i {
+        margin-left: .5em;
+        padding: .4rem;
+      }
+    }
+
+    form {
+      button {
+        font-size: .8em;
+      }
+    }
+
     .container {
 
       .footer-lengthy-item {
@@ -236,6 +249,8 @@ footer {
             }
           }
         }
+
+
       }
 
     }
