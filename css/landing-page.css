@@ -445,8 +445,8 @@ header.masthead .container {
   overflow-x: hidden;
 }
 
-header.masthead h1 {
-  font-size: 2rem;
+header.masthead .col-md-5 h1 {
+  font-size: 4em;
 }
 
 @media all and (max-width: 1024px) {
@@ -462,7 +462,22 @@ header.masthead h1 {
   }
 }
 
+@media all and (max-width: 768px) {
+  header.masthead .col-md-5 h1 {
+    font-size: 2.5em;
+  }
+  header.masthead .col-md-5 .btn-danger {
+    margin-bottom: .8rem;
+  }
+}
+
 @media all and (max-width: 480px) {
+  header.masthead .row {
+    margin-bottom: 4rem;
+  }
+  header.masthead .col-md-7 img {
+    margin-top: 4.5rem;
+  }
   header.masthead .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -470,7 +485,7 @@ header.masthead h1 {
     flex-direction: column-reverse;
   }
   header.masthead .row .btn-danger {
-    margin-left: 1rem;
+    margin-left: 0rem;
   }
 }
 
@@ -592,18 +607,28 @@ header.masthead .col-md-4 img {
   text-transform: uppercase;
 }
 
+@media all and (max-width: 1024px) {
+  .testimonism h1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+
 @media all and (max-width: 768px) {
   .testimonism {
     height: auto;
   }
   .testimonism h1 {
     margin: 0;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .testimonism .carousel-control-next-icon,
   .testimonism .carousel-control-prev-icon {
     display: none;
+  }
+  .testimonism .card {
+    margin-bottom: 2rem;
   }
   .testimonism .card .card-body {
     padding: 0.25rem;
@@ -785,7 +810,7 @@ header.masthead .col-md-4 img {
 
 .testimonials .card-block {
   position: absolute;
-  background: #fff;
+  background: transparent;
   height: 88%;
   width: 5%;
   display: -webkit-box;
@@ -797,15 +822,13 @@ header.masthead .col-md-4 img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-shadow: 1px 4px 13px -5px #000000;
-  box-shadow: 1px 4px 13px -5px #000000;
   border-radius: 5px;
   right: 11%;
   top: 0%;
 }
 
 .testimonials .card-block i {
-  color: #ED5565;
+  color: #ed5565;
 }
 
 .testimonials .card {
@@ -852,6 +875,15 @@ header.masthead .col-md-4 img {
   box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
+@media all and (max-width: 1440px) {
+  .testimonials .card-block {
+    right: 7%;
+  }
+  .testimonials .card-block {
+    right: 0;
+  }
+}
+
 @media all and (max-width: 768px) {
   .testimonials .card.pension {
     background: url("../img/New-homepage-4.png") no-repeat;
@@ -871,13 +903,11 @@ header.masthead .col-md-4 img {
     background-position: bottom right;
     line-height: normal;
   }
-  .testimonials .row .card-block {
-    position: absolute;
-    background: #fff;
-    height: 48%;
-    width: 7%;
+  .testimonials .card-block {
     right: 0;
-    top: 17%;
+  }
+  .testimonials .card-block i {
+    font-size: 1.5em;
   }
 }
 
@@ -889,6 +919,10 @@ header.masthead .col-md-4 img {
   .testimonials .card-block {
     position: static;
     width: 100%;
+    display: none;
+  }
+  .testimonials .card-block i {
+    display: none;
   }
   .testimonials .card-block img {
     -webkit-transform: rotate(180deg);
@@ -1026,6 +1060,23 @@ header.masthead .col-md-4 img {
   .call-to-action .container .side-two .col-md-4 .card {
     margin-top: 2rem;
     width: auto;
+  }
+  .call-to-action .container .side-two .col-md-4 .card .card-body {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .call-to-action .container .side-two {
+    width: 100%;
+  }
+  .call-to-action .container .side-two .col-md-4 {
+    width: 100%;
+  }
+  .call-to-action .container .side-two .col-md-4 .card {
+    margin-top: 2rem;
+    margin-left: 0;
+    width: 100%;
   }
   .call-to-action .container .side-two .col-md-4 .card .card-body {
     width: 100%;
@@ -1246,7 +1297,7 @@ footer form button:hover {
     padding: 0;
   }
   footer .icons i {
-    margin-left: .5em;
+    margin-left: .3em;
     padding: .4rem;
   }
   footer form button {
@@ -1266,6 +1317,9 @@ footer form button:hover {
   }
   footer .container .row ul li i {
     padding-right: .5rem;
+  }
+  footer .first-row.row {
+    padding-top: 2rem;
   }
   footer .first-row.row .col-md-4 h2 {
     font-size: 1.3em;
@@ -1287,6 +1341,9 @@ footer form button:hover {
   }
   footer .row .col-md-4 {
     margin-bottom: 2rem;
+  }
+  footer .first-row.row {
+    display: none;
   }
   footer .row .details {
     margin-left: 1.5rem;

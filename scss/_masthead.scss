@@ -8,9 +8,10 @@ header.masthead {
     overflow-x: hidden;
   }
 
-  h1 {
-    font-size: 2rem;
+  .col-md-5 h1 {
+    font-size: 4em;
   }
+
 
   @media all and (max-width:1024px) {
     .container {
@@ -38,12 +39,36 @@ header.masthead {
 
   }
 
+
+  @media all and (max-width:768px) {
+
+    .col-md-5 {
+      h1 {
+        font-size: 2.5em;
+      }
+
+      .btn-danger {
+        margin-bottom: .8rem;
+      }
+    }
+  }
+
   @media all and (max-width:480px) {
+    .row {
+      margin-bottom: 4rem;
+    }
+
+    .col-md-7 {
+      img {
+        margin-top: 4.5rem;
+      }
+    }
+
     .row {
       flex-direction: column-reverse;
 
       .btn-danger {
-        margin-left: 1rem;
+        margin-left: 0rem;
       }
     }
   }

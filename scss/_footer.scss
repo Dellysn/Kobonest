@@ -211,9 +211,11 @@ footer {
 
     }
 
+
+
     .icons {
       i {
-        margin-left: .5em;
+        margin-left: .3em;
         padding: .4rem;
       }
     }
@@ -256,6 +258,7 @@ footer {
     }
 
     .first-row.row {
+      padding-top: 2rem;
 
       .col-md-4 {
         h2 {
@@ -282,6 +285,10 @@ footer {
         margin-bottom: 2rem;
 
       }
+    }
+
+    .first-row.row {
+      display: none;
     }
 
     .row {

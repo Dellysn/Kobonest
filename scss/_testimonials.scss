@@ -20,21 +20,18 @@
 
   .card-block {
     position: absolute;
-    background: #fff;
+    background: transparent;
     height: 88%;
     width: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-box-shadow: 1px 4px 13px -5px #000000;
-    box-shadow: 1px 4px 13px -5px #000000;
     border-radius: 5px;
     right: 11%;
     top: 0%;
 
-
     i {
-      color: #ED5565;
+      color: #ed5565;
     }
   }
 
@@ -56,11 +53,6 @@
     }
   }
 
-
-
-
-
-
   .card.pension {
     background: url("../img/New-homepage-4.png") no-repeat;
     background-position: bottom right;
@@ -78,8 +70,6 @@
 
   .row {}
 
-
-
   .testimonial-item {
 
     // max-width: 18rem;
@@ -90,14 +80,28 @@
   }
 }
 
-@media all and (max-width:768px) {
+@media all and (max-width: 1440px) {
+  .testimonials {
+    .card-block {
+      right: 7%;
+
+    }
+
+    .card-block {
+      right: 0;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
   .testimonials {
     .card.pension {
       background: url("../img/New-homepage-4.png") no-repeat;
       background-position: bottom right;
       line-height: normal;
-
     }
+
+
 
     .card-block {
       right: 2%;
@@ -107,28 +111,27 @@
       background: url("../img/bulb.png") no-repeat;
       background-position: bottom right;
       line-height: normal;
-
     }
 
     .card.saving {
       background: url("../img/personal-international.png") no-repeat;
       background-position: bottom right;
       line-height: normal;
-
     }
 
-    .row .card-block {
-      position: absolute;
-      background: #fff;
-      height: 48%;
-      width: 7%;
+    .card-block {
+
       right: 0;
-      top: 17%;
+
+
+      i {
+        font-size: 1.5em;
+      }
     }
   }
 }
 
-@media all and (max-width:480px) {
+@media all and (max-width: 480px) {
   .testimonials {
     .card {
       margin-bottom: 2rem;
@@ -138,6 +141,11 @@
     .card-block {
       position: static;
       width: 100%;
+      display: none;
+
+      i {
+        display: none;
+      }
 
       img {
         transform: rotate(180deg);

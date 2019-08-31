@@ -77,14 +77,26 @@
 }
 
 
+@media all and (max-width:1024px) {
+    .testimonism {
+
+
+        h1 {
+
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
 @media all and (max-width:768px) {
     .testimonism {
         height: auto;
 
         h1 {
             margin: 0;
-            padding-top: 2rem;
-            padding-bottom: 1rem;
+            padding-top: 0;
+            padding-bottom: 0;
         }
 
         .carousel-control-next-icon,
@@ -93,6 +105,8 @@
         }
 
         .card {
+            margin-bottom: 2rem;
+
             .card-body {
                 padding: 0.25rem;
                 font-size: .8em;

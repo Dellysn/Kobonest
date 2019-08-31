@@ -165,3 +165,35 @@
 
   }
 }
+
+@media all and (max-width:375px) {
+  .call-to-action {
+    .container {
+
+
+      .side-two {
+        width: 100%;
+
+        .col-md-4 {
+          width: 100%;
+
+          .card {
+            margin-top: 2rem;
+            margin-left: 0;
+
+            width: 100%;
+
+            .card-body {
+              width: 100%;
+            }
+
+          }
+        }
+
+
+      }
+    }
+
+
+  }
+}
