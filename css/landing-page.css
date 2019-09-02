@@ -220,6 +220,11 @@ nav .navbar-toggler-icon i {
   transform: rotate(-180deg);
 }
 
+#faq-section #accordion .card .card-header h5 i.inactive {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
 #faq-section #accordion .card .card-header h5 a {
   color: #dc3545;
   font-size: .8em;

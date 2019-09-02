@@ -1,36 +1,13 @@
-// const faqList = document.querySelectorAll(".btn-group");
-// console.log(faqList);
-// faqList.forEach(list => {
-//   list.addEventListener("click", function(e) {
-//     const elem = e.target.parentElement;
-//     elem.style.backgroundColor = "red";
-//     const elemNext = e.target.nextElementSibling;
-//     elemNext.style.color = "blue";
-//   });
-// });
 
-// var active = null;
-
-// $(".list-group li >  a").click(function(evt) {
-//   active = $(this).attr("class");
-//   console.log(this);
-//   if (active != null) {
-//     $("a." + active).focus();
-//   }
-// });
-// $("body").click(function(evt) {});
-
+/*
+@params(toggle) 
+*/  
 const faqList = document.querySelectorAll(".list-group-item > a");
-// console.log(faqList);
-//
 const faqListArray = [...faqList];
-console.log(faqListArray);
-
 faqListArray.forEach(faq => {
   faq.addEventListener("click", e => {
     let li = faq.parentElement;
     let i = faq.children[1];
-    console.log(i);
     if (li.classList.contains("active")) {
       li.classList.remove("active");
       i.style.display = "none";
@@ -59,4 +36,17 @@ collapseArray.forEach(collapse => {
     }
   });
 });
-// nextElementSibling
+
+
+/*
+@params (accordion arrows) changing directions
+@params (Initial accordion) element tweak
+*/ 
+
+var initial = document.querySelector("#initial-arrow");
+if (initial.classList.contains("active")) {
+  this.classList.remove("active");
+  initial.classList.add("inactive");
+}else{
+  initial.classList.add("active");
+}

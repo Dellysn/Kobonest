@@ -161,6 +161,9 @@
                     i.active {
                         transform: rotate(-180deg);
                     }
+                    i.inactive{
+                    transform: rotate(-180deg);
+                    }
 
                     a {
                         color: $danger;
